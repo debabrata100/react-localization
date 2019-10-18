@@ -2,4 +2,7 @@ This project is bootsrapped with create-react-app and demonstrates how to do loc
 
 ## Run project
 
-### `yarn start`
+`yarn start`
+
+## Detailed Explanation
+[Medium Blog](https://medium.com/@debabrata100/96afd4169523)
