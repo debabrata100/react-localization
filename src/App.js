@@ -6,12 +6,12 @@ const en = require('react-intl/locale-data/en');
 const zh = require('react-intl/locale-data/zh');
 const ru = require('react-intl/locale-data/ru');
 const fr = require('react-intl/locale-data/fr');
+
 const addLocaleData = require('react-intl').addLocaleData; 
 addLocaleData(en);
 addLocaleData(zh);
 addLocaleData(ru);
 addLocaleData(fr);
-
 
 const defaultLocale = localStorage['locale'] ? localStorage['locale'] : 'en'; // English is default locale if none is set
 const localeList = [
