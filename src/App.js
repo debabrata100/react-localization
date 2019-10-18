@@ -41,10 +41,10 @@ const messages={
 function App() {
   const [currentLocale, setCurrentLocale] = useState(defaultLocale);
   const onChangeLanguage = (e) => {
-      console.log("selected locale",e.target.value);
-      setCurrentLocale(e.target.value);
-      localStorage.setItem('locale',currentLocale)
-  }
+    const selectedLocale = e.target.value;
+    setCurrentLocale(selectedLocale);
+    localStorage.setItem('locale',selectedLocale)
+}
   return (
     <IntlProvider locale={currentLocale} messages={messages[currentLocale]}>
       <div className="App">
